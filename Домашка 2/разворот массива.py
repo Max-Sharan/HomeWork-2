@@ -8,8 +8,8 @@ while cycles < size-1 :
         buff = numbers[index]
         numbers[index] = numbers[index + 1]
         numbers[index + 1] = buff
-        index += 1
+        index ++ # проверка работы "++" вместо "+= 1" ?
     index = 0
-    size -= 1
+    size -- # будет ли работать с "--" вместо "-= 1" ?
     
 print("Зеркальный массив =", numbers)
